@@ -1,0 +1,27 @@
+---
+layout: custom_page
+title: "Hi-Lo Simulation"
+comments: false
+sharing: false
+footer: true
+---
+Summer 2012
+
+<div class="row">
+<div class="span10">
+	<div class="page-header"></div>
+	<p>
+	During 2012's summer I read a book and learned a method of card counting called the KO method. The book claimed that the KO method was superior to other card counting methods (and had pretty graphs to back it up!). I wanted to see the real results...
+	</p>
+	<p>
+	I forked a python application that simulates games of blackjack played using various card counting strategies and implemented the KO method. Then the computation was distributed to the University of Toronto's Engineering Computation Facility which comprises of ~170 computers.
+	</p>
+	<p>
+	Millions of games were simulated, the results were analysed in R to determine various statistics on several card counting strategies. Some of these statistics are avg # of hands to double initial capital, % chance to ruin before doubling, avg expectation of hand.
+	</p>
+	<p>
+	The end result, unfortunately, is that the KO method does not perform any better than other popular methods such as Hi-Lo and Red Sevens.
+	</p>
+	{% include custom/mini-footer.html %}
+</div>
+</div>
