@@ -1,0 +1,39 @@
+---
+layout: custom_page
+title: "Tile Titans"
+subtitle: "Summer 2013"
+comments: false
+sharing: false
+footer: true
+---
+
+<div class="span1"></div>
+<div class="span9">
+	<p>
+	Players go head to head in this turn based board game that plays like a mix between chess and tic-tac-toe. The game is currently available to play on kongregate and will soon be accessible through the chrome store. There are plans in the near future to release the game on mobile phones.
+	</p>
+
+	<ul class="row">
+	  <li class="span3 project-thumbnail">
+	      <img src="/images/projects/tt-screenshot-1.png" alt="">
+	  </li>
+	  <li class="span3 project-thumbnail">
+	      <img src="/images/projects/tt-screenshot-2.png" alt="">
+	  </li>
+	  <li class="span3 project-thumbnail">
+	      <img src="/images/projects/tt-screenshot-3.png" alt="">
+	  </li>
+	</ul>
+
+	<div class="page-header"></div>
+
+	<p>
+	The game runs on HTML5 inside the browser. Client side code leverages AngularJS, CoffeeScript and Less and is delivered to the client via Amazon's CloudFront CDN. 
+	</p>
+
+	<p>
+	The servers run NodeJS with Socket.io as the communication layer and are hosted on Amazon EC2. The nodes hit a MongoDB hosted by MongoHQ for persistant storage and a Redis server (also EC2) for everything else.
+	</p>
+
+	{% include custom/mini-footer.html %}
+</div>

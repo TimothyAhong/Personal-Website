@@ -1,17 +1,11 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
-  <body style="background:#f2f2f2 url('/images/noise.png');">
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span2 bs-docs-sidebar">
-          {% include custom/navigation.html %}
-        </div>
-        <div class="span10">
-          <div class="page-body">
+  <body>
+    {% include custom/navigation.html %}
+    <div class="container">
+          <div class="row span12 page-body">
             {{ content | expand_urls: root_url }}
           </div>
-        </div>
-      </div>
     </div>
     <footer role="contentinfo">{% include footer.html %}</footer>
     {% include after_footer.html %}

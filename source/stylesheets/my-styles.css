@@ -1,13 +1,11 @@
 
 /*GENERAL PAGE*/
 .page-body { 
-	max-width: 900px; 
-	margin: auto; 
-	margin-top: 50px;
-	margin-bottom: 50px;
+
 }
 
 /*NAVBAR*/
+/*
 .navbar-container {
 	top:20px;
 	top:15%;
@@ -32,6 +30,41 @@
 li {
 	line-height: 15px;
 	padding: 3px;
+}
+*/
+
+/*NEW NAVBAR*/
+
+.navbar-inner {
+	background-color: #d5d5d5;
+	height: 60px;
+	line-height: 40px;
+	/*override bootstrap defaults*/
+	background-image: none;
+	border: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: 0;
+	-moz-box-shadow: 0;
+	box-shadow: 0;
+}
+
+.navbar .nav {
+	float: right;
+	margin-right: 50px;
+	margin-top: 7px;
+}
+
+.navbar .nav>li>a {
+	float: none;
+	color: #777;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+.navbar .brand {
+text-shadow: none;
 }
 
 /*PROJECT LISTING*/
@@ -60,7 +93,7 @@ li {
 .project.pink { background-color: rgb(224, 85, 158); }
 
 .project-text {
-	margin-top: 55px;
+	margin-top: 65px;
 	line-height: 20px;
 }
 

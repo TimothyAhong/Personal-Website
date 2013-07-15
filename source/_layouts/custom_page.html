@@ -8,6 +8,7 @@ layout: custom_default
   <header>
     <h3 class="entry-title" style="color:gray;">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h3>
     {% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
+    {% if page.subtitle %}<p class="meta">{{ page.subtitle }}</p>{% endif %}
   </header>
   {% endif %}
   {{ content }}
