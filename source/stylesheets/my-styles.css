@@ -1,7 +1,37 @@
 
 /*GENERAL PAGE*/
 .page-body { 
+	margin: 0px;
+}
 
+.text-body {
+	font-size: 18px;
+	font-family: "ApercuRegular", Helvetica, Helvetica Neue, Arial, sans-serif;
+	text-align: justify;
+	line-height: 27px;
+	color: #202020;
+}
+
+.self-pic {
+	display: block;
+	margin: auto;
+	width: 100px;
+	padding-top: 20px;
+	padding-bottom: 35px;
+}
+
+.entry-title {
+	font-weight: 300;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	color: black;
+}
+
+.entry-subtitle {
+	font-weight: lighter;
+	text-align: center;
+	margin-bottom: 50px;
 }
 
 /*NAVBAR*/
@@ -61,12 +91,13 @@ li {
 .navbar .nav {
 	position: static;
 	display: inline;
-	float: none;
+	float: left;
 	width: 100%;
+	margin: 0px;
 }
 
 .navbar .nav>li {
-	line-height: 70px;
+	line-height: 80px;
 	display: inline-block;
 	width: 33%;
 }
@@ -75,13 +106,13 @@ li {
 	float: none;
 	color: #424242;
 	font-size: 15px;
-	font-weight: lighter;
+	font-weight: 300;
 	text-decoration: none;
 	text-shadow: none;
 }
 
 .navbar .nav>li>a:hover {
-	color: #EEE;
+	color: #C9C9C9;
 }
 
 .navbar .brand {
