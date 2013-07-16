@@ -7,8 +7,8 @@ sharing: false
 footer: true
 ---
 
-<div class="span1"></div>
-<div class="span9">
+<div class="span3"></div>
+<div class="span6 text-body">
 	<p>Designed and developed for the University of Toronto Institute for Aerospace Studies (UTIAS) to perform multi-vehicle simulations on various terrains.
 	</p>
 	
@@ -19,25 +19,26 @@ footer: true
 	<p>
 	The onboard circuits are proprietary PCBs, designed and developed in-house. The robot is controlled by a PIC32 microcontroller.
 	</p>
-
+	<div class="page-header"></div>
+</div>
 	<ul class="row">
-	  <li class="span3 project-thumbnail">
+	  <li class="span4 project-thumbnail">
 	      <img src="/images/projects/rover-1.png" alt="">
 	  </li>
-	  <li class="span3 project-thumbnail">
+	  <li class="span4 project-thumbnail">
 	      <img src="/images/projects/rover-2.png" alt="">
 	  </li>
-	  <li class="span3 project-thumbnail">
+	  <li class="span4 project-thumbnail">
 	      <img src="/images/projects/rover-3.png" alt="">
 	  </li>
 	</ul>
+
+<div class="span3"></div>
+<div class="span6 text-body">
 	<div class="page-header"></div>
 	<p>
 	Each PIC32 is preloaded with custom firmware that provides actuator control methods, odometry methods and wireless communication with the included PC application. The PC application connects wirelessly to the robots via RF. The PC application can query sensors, control actuators and bootload programs to the onboard PIC32s.
 	</p>
-
 	
-
 	{% include custom/mini-footer.html %}
-</div>
 </div>
