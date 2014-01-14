@@ -29,7 +29,7 @@
 }
 
 .entry-subtitle {
-	font-weight: lighter;
+	font-weight: 200;
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -99,7 +99,7 @@ li {
 .navbar .nav>li {
 	line-height: 80px;
 	display: inline-block;
-	width: 33%;
+	width: 50%;
 }
 
 .navbar .nav>li>a {
