@@ -10,7 +10,9 @@ document_root  = "~/website.com/"
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
 deploy_default = "s3"
-s3_bucket = "www.timothyahong.com"
+#s3_bucket = "www.timothyahong.com"
+s3_bucket = 'www.timothy-ahong-personal-website'
+#s3_bucket = 'timothyahong.com'
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
