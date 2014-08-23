@@ -5,7 +5,6 @@ layout: custom_default
 <div class="container">
   <div class="row span12 page-body">
     <div>
-      <article role="article">
         {% if page.title %}
         <header>
           <h3 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h3>
@@ -26,7 +25,6 @@ layout: custom_default
             {% endunless %}
           </footer>
         {% endunless %}
-      </article>
       {% if site.disqus_short_name and page.comments == true %}
       <section>
         <h1>Comments</h1>
