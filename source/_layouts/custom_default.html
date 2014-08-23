@@ -1,12 +1,8 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
-  <body style="background:rgb(250, 250, 250);">
+  <body>
     {% include custom/navigation.html %}
-    <div class="container">
-          <div class="row span12 page-body">
-            {{ content | expand_urls: root_url }}
-          </div>
-    </div>
+    {{ content | expand_urls: root_url }}
     <footer role="contentinfo">{% include footer.html %}</footer>
     {% include after_footer.html %}
   </body>

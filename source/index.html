@@ -1,46 +1,128 @@
 ---
-layout: custom_page
+layout: custom_default
 comments: false
 sharing: false
 footer: false
+sub_header_title: "Timothy Ahong"
+sub_header_image: "/images/me2.png"
 ---
 
-<img src="/images/me.png" class="self-pic"/>
-<div class="link-container">
-	<a href="https://github.com/TimothyAhong"><img class="link-logo" src="/images/GitHub-Mark-64px.png"></a>
-	<a href="http://www.linkedin.com/in/timothyahong"><img class="link-logo" src="/images/LinkedIn-64px.png"></a>
-	<a href="https://plus.google.com/u/1/109848505438287578112/"><img class="link-logo" src="/images/googleplus-64px.png"></a>
+
+<div class="sub-header">
+	<img src="{{page.sub_header_image}}" class="sub-header-image"/>
+	<span class="sub-header-text">
+		<h3 class="title-text">{{page.sub_header_title}}</h3>
+		<h3 class="date-text">{{page.sub_header_date}}</h3>
+		<div class="link-container">
+			<a href="https://github.com/TimothyAhong"><img class="link-logo" src="/images/GitHub-Mark-64px.png"></a>
+			<a href="http://www.linkedin.com/in/timothyahong"><img class="link-logo" src="/images/LinkedIn-64px.png"></a>
+			<a href="https://plus.google.com/u/1/109848505438287578112/"><img class="link-logo" src="/images/googleplus-64px.png"></a>
+		</div>
+	</span>
 </div>
 
-<div class="span3"></div>
-<div class="span6 text-body">
-	<p>
-	Welcome to my portfolio website! My name is Timothy Ahong. I studied Aerospace Engineering at the University of Toronto.
-	</p>
-	<div class="page-header"></div>
-	<p>
-	Aerospace Engineering has been a challenging and enlightening area of study. The program includes a breadth of fields from fluid dynamics to robotics to space systems design. 
-	</p>
 
-	<p>
-	Within Aerospace my interests are primarily robotics and control systems. Here are a few <i>robots</i> I have worked on during my Undergraduate degree. Check out the project pages for more details!
-	</p>
-	<div class="page-header"></div>
+<div class="container">
+  	<div class="row span12 page-body">
+	    <article role="article">
+			<div class="span6 offset3 text-body">
+				<h3 class="section-header">Overview</h3>
+				<p>
+				Welcome to my portfolio website! My name is Timothy Ahong. This website documents the projects and programs that I have been involved in and oulines my key takeaways from each of these experiences.
+				</p>
+			</div>
+		</article>
+	</div>
 </div>
-<ul class="row">
-	<li class="span4 project-thumbnail">
-		<img src="/images/projects/rover-3.png" alt="">
-	</li>
-	<li class="span4 project-thumbnail">
-		<img src="/images/projects/rover-1.png" alt="">
-	</li>
-	<li class="span4 project-thumbnail">
-	      <img src="/images/projects/aer201-3.png" alt="">
-	 </li>
-</ul>
 
-<div class="span3"></div>
-<div class="span6 text-body">
+<div class="article-break container">
+	<div class="row">
+		<div class="span3 offset6">
+			<img class="single-image" src="/images/engineering-logo.png" alt="">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+  	<div class="row span12 page-body">
+	    <article role="article">
+			<div class="span6 offset3 text-body">
+				<h3 class="section-header">Aerospace Engineering at The University of Toronto</h3>
+				<p>
+				Aerospace Engineering has been a challenging and enlightening area of study. The program includes a breadth of fields from fluid dynamics to robotics to space systems design.
+				<br />
+				Within Aerospace my interests are primarily robotics and control systems. Talks about AER201 and link to project. Talk about something else
+				</p>
+			</div>
+		</article>
+	</div>
+</div>
+
+<div class="article-break container">
+	<div class="row">
+		<div class="span3 offset6 text-center">
+			<img class="single-image" src="/images/UTIAS.png" alt="">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+  	<div class="row span12 page-body">
+	    <article role="article">
+			<div class="span6 offset3 text-body">
+				<h3 class="section-header">University of Toronto Institute for Aerospace Studies</h3>
+				<p>
+				Worked at UTIAS doing whatevs, learned whatevs. Here is the associated project
+				</p>
+			</div>
+		</article>
+	</div>
+</div>
+
+<div class="article-break container">
+	<div class="row">
+		<div class="span3 offset6 text-center">
+			<img class="single-image" src="/images/eventmobi-logo.png" alt="">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+  	<div class="row span12 page-body">
+	    <article role="article">
+			<div class="span6 offset3 text-body">
+				<h3 class="section-header">Full-Stack Developer at EventMobi</h3>
+				<p>
+				Talk about EventMobi
+				</p>
+			</div>
+		</article>
+	</div>
+</div>
+
+<div class="article-break container">
+	<div class="row">
+		<div class="span3 offset6">
+			<img class="single-image" src="/images/the-next-36-logo.png" alt="">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+  	<div class="row span12 page-body">
+	    <article role="article">
+			<div class="span6 offset3 text-body">
+				<h3 class="section-header">The Next 36</h3>
+				<p>
+				Talk about The Next 36...
+				</p>
+				{% include custom/mini-footer.html %}
+			</div>
+		</article>
+	</div>
+</div>
+
+<div class="span6 offset3 text-body">
 	<div class="page-header"></div>
 	<p>
 	During 3rd year I had my first exposure to web development by playing around with Ruby on Rails. After 3rd year I started my PEY (Professional Experience Year) at EventMobi, a Toronto based startup, as a full-stack web developer.
@@ -54,5 +136,5 @@ footer: false
 	Aside from EventMobi I have worked on several contracts, hackathons and side-projects to hone my web-fu. Check out the project pages for details!
 	</p>
 	
-	{% include custom/mini-footer.html %}
+	
 </div>

@@ -1,45 +1,94 @@
 ---
-layout: custom_page
+layout: custom_detail_page
 title: "Tire Stacking Robot"
 subtitle: "Winter 2011"
 comments: false
 sharing: false
 footer: true
+sub_header_title: "Tire Stacking Robot"
+sub_header_date: "Winter 2011"
+sub_header_image: "/images/projects/tire_stacking_robot.png"
 ---
 
-<div class="span3"></div>
-<div class="span6 text-body">
-	<p>Designed and developed as part of the University of Toronto Engineering Science Undergraduate AER201 Design course.
-	</p>
-	
-	<p>
-	Students were placed in groups of 3 and given a design problem for which they must construct an autonomous robot. My role on the team was electro-mechanical design and construction. Here is a video of an early version test run:
-	</p>
-	<iframe style="padding-top:10px;padding-bottom:10px;" src="http://player.vimeo.com/video/70286693" width="100%" height="500px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-	
-	<p>
-	The purpose of the robot is to stack rolls of tape onto poles. The robot scans the pole for tape then dispenses 1 or 2 rolls of tape via the swinging arm.
-	</p>
-	
-	<p>
-	The robot is controlled by a PIC18 and programmed entirely in assembly (part of the course is learning assembly).
-	</p>
-
-	<div class="page-header"></div>
+<div class="container">
+  	<div class="row span12 page-body">
+	    <article role="article">
+			<div class="span3"></div>
+			<div class="span6 text-body">
+				<h3 class="section-header">Overview</h3>
+				<p>
+				This is an autonomous tape stacking robot that was designed and developed as part of the University of Toronto Engineering Science Undergraduate AER201 Design course. I was part of a team of 3 who developed the robot.
+				</p>
+				<h3 class="section-header">Skills</h3>
+				<ul>
+					<li>PIC Microcontroller</li>
+					<li>Assembly Language</li>
+					<li>DC Motor, Solenoid & IR Sensor Circuitry</li>
+					<li>Basic Machining</li>
+				</ul>
+				<h3 class="section-header">Key Learnings</h3>
+				<p>
+				<b>Buy premade circuitry:</b> Our team spent a large amount of time debugging and tweaking our homemade circuits that dealt with sensors input (IR ranger and shaft encoder) and controlling our actuators (DC motors, solenoids and servos). Many of these circuits can be purchased as pre-made PCBs and we found out later that they are often cheaper than buying the components yourself! Although it was a good learning experience to manually build these circuits I will default to buying the pre-made PCBs in the future.
+				</p>
+				<p>
+				<b>Minimize the number of moving parts:</b> Our design involved 1 DC motor for locomotion, 2 DC motors for the lift, 1 servo for the arm and a solenoid on the arm. Each moving part added considerable time and complexity to the project. In hindsight I would have traded the additonal functionality offered by more actuators for improved 
+				</p>
+			</div>
+		</article>
+	</div>
 </div>
 
-	<ul class="row">
-	  <li class="span4 project-thumbnail">
-	      <img src="/images/projects/aer201-1.png" alt="">
-	  </li>
-	  <li class="span4 project-thumbnail">
-	      <img src="/images/projects/aer201-2.png" alt="">
-	  </li>
-	  <li class="span4 project-thumbnail">
-	      <img src="/images/projects/aer201-3.png" alt="">
-	  </li>
-	</ul>
-<div class="span3"></div>
-<div class="span6 text-body">
-	{% include custom/mini-footer.html %}
+<div class="article-break">
+	<iframe style="margin-bottom:-5px;" src="http://player.vimeo.com/video/70286693" width="auto" height="500px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+
+<div class="container">
+  	<div class="row span12 page-body">
+	    <article role="article">
+			<div class="span3"></div>
+			<div class="span6 text-body">
+				<h3 class="section-header">AER201 Course</h3>
+				<p>
+				The AER201 course is a 2nd year design course that is one of the hallmarks of U of T's Engineering Science program. Students are placed in groups of 3 and given a design problem for which they must construct an autonomous robot.
+				<br /><br/>
+				The purpose of the robot is to stack rolls of tape onto poles such that after the run each pole has exactly 2 rolls of tape. Each pole can start the run with either 0, 1 or 2 rolls of tape so the autonomous robot must detect the number of rolls on each pole and dispense rolls accordingly.
+				</p>
+			</div>
+		</article>
+	</div>
+</div>
+
+<ul class="article-break">
+  <li class="third project-thumbnail">
+      <img src="/images/projects/aer201-1.png" alt="">
+  </li>
+  <li class="third project-thumbnail">
+      <img src="/images/projects/aer201-2.png" alt="">
+  </li>
+  <li class="third project-thumbnail">
+      <img src="/images/projects/aer201-3.png" alt="">
+  </li>
+</ul>
+
+<div class="container">
+  	<div class="row span12 page-body">
+	    <article role="article">
+			<div class="span3"></div>
+			<div class="span6 text-body">
+				<h3 class="section-header">Our Solution</h3>
+				<p>
+				Our solution was a mobile platform with a swining arm that dropped rolls onto each pole. Our robot would drive until it detected a pole using IR sensors and then it would count the number of rolls on the pole with additional IR sensors.
+				<br/><br/>
+				After determining the number of rolls to dispense a pully would raise 1 or 2 rolls up into the arm using DC motors and a bike chain lift. Once the rolls were raised the arm would grasp onto them using solenoids and rotate out to the correct angle using the servo controlled arm.
+				<br/><br/>
+				The robot was controlled by a PIC18 microcontroller and one of the requirements was that all programming be done in assembly language.
+				</p>
+				<h3 class="section-header">My Role</h3>
+				<p>
+				Each team member selected an area of responsibility, the possibilities were electromechanical, circuits and programming. My responsibility on the team was electromechanical. This role consisted of machining the parts, building the robot and selecting/testing the actuators.
+				</p>
+				{% include custom/mini-footer.html %}
+			</div>
+		</article>
+	</div>
 </div>
